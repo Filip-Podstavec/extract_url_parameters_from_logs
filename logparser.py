@@ -16,6 +16,7 @@ BOTS = OrderedDict([
     ('Yahoo', r'Slurp'),
     ('Yandex', r'YandexBot'),
     ('Baidu', r'Baiduspider'),
+    ('SeznamBot (including test)', r'SeznamBot'),
 ])
 
 
