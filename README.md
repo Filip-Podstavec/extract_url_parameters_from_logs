@@ -7,6 +7,8 @@ https://www.google.com/search?q=filetype%3Alog+inurl%3Aaccess
 ## Example output
 Spreadsheet: https://docs.google.com/spreadsheets/d/1ExndYXQ54QJH0SrEw-RIPGHb7yEECBjLTHgxwRuP52k/edit?usp=sharing
 
+![Example of the output CSV](https://www.openrefine.cz/img/logparser.PNG "Example of the output CSV")
+
 ## Setup
 `pip install -r requirements.txt`
 
