@@ -98,12 +98,12 @@ def extract_matching_urls(file, bot):
     with open(file) as f:
         for row in f:
             # Find only URLs with GET parameters crawled by specific bot and store them in urls array
-            result = re.findall(r".*GET\s(.*\?.*)\sHTTP.*{0}.*".format(bot), row)
+            result = re.match(r".*GET\s(\S*\?\S+)\sHTTP.+{0}".format(bot), row)
             if i % 100000 == 0:
                 print(str(i) + ' rows processed')
             i = i + 1
             if result:
-                urls.append(result[0])
+                urls.append(result[1])
     return urls
 
 
